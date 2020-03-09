@@ -1,0 +1,65 @@
+import React, { Component } from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+
+import Logo from "../images/logo.png"
+
+
+
+class Layouti extends Component {
+  render() {
+    const {children} =this.props
+    
+    return (
+        <div>
+            <nav className={this.props.bgnav}>
+                <div className ="container">
+                    <div>
+                        <h1>
+                            <Link to="/">
+                                <img src={Logo} alt="Idée Code" />
+                            </Link>
+                        </h1>
+                    </div>
+                    <div>
+                        <ul className="menu">
+                            <li><Link to="/">Accueil</Link></li>
+                            <li><Link to="/solutions/">Solutions</Link></li>
+                            <li><Link to="/formation/">Formation</Link></li>
+                            <li><Link to="/blog/">Blog</Link></li>
+                            <li><Link to="/contact/">Contact</Link></li>
+                            <li><Link to="/contact/" className={this.props.btnnav}>Demander une Démo</Link></li>
+                            <li><Link to="/login/" className={this.props.btnnav}>Se Connecter</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>{children}</main>
+            <footer>
+                <div className={this.props.bgfooter1}>
+                    <ul className="nav-footer">
+                        <li><Link to="/sitemap/">Plan du Site</Link></li>
+                        <li><Link to="/privacy/">Mentions légales</Link></li>
+                        <li><Link to="/contact/">Contact</Link></li>
+                    </ul>
+                    <ul className="social-icon">
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div className={this.props.bgfooter2}>
+                    <p>Copyright - Idéecode - Jérémy DIARD - Brandon DIARD</p>
+                </div>
+            </footer>
+        </div>
+    )
+  }
+}
+
+Layouti.propTypes = {
+    children: PropTypes.node.isRequired,
+  }
+
+export default Layouti
