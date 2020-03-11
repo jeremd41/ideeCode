@@ -7,11 +7,11 @@ class HeroVidButton extends Component {
     render() {
         return (
             <section className="hero-vid">
-                <video autoplay muted loop>
+                <video autoPlay muted loop>
                     <source src={code} type="video/mp4"/>
                 </video>
 
-                <div class="content">
+                <div className="content">
                     <h2>Faites le choix De la modernité</h2>
                     <p>Webizy vous accompagne dans la conception d’application web et mobile qui fera grandir votre entreprise..   </p>
                     <div>

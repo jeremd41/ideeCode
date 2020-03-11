@@ -43,10 +43,10 @@ class Layouti extends Component {
                         <li><Link to="/contact/">Contact</Link></li>
                     </ul>
                     <ul className="social-icon">
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i className="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i className="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i className="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <div className={this.props.bgfooter2}>

@@ -2,6 +2,9 @@ import React, { Component } from "react"
 import SEO from "../components/seo"
 import Layouti from "../components/layouti"
 import HeroVidButton from "../components/herovidbutton"
+import SolutionsContainer from "../components/solutionscontainer"
+import FormationsContainer from "../components/formationscontainer"
+import BlogContainer from "../components/blogcontainer"
 import { Link } from "gatsby"
 
 import "../components/reset.css"
@@ -13,7 +16,10 @@ class index extends Component {
     return (
         <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="accueil2">
           <SEO title="Accueil" />
-          <HeroVidButton></HeroVidButton>
+          <HeroVidButton/>
+          <SolutionsContainer/>
+          <FormationsContainer/>
+          <BlogContainer/>
         </Layouti>
     )
   }
