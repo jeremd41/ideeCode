@@ -1,0 +1,190 @@
+/* Page Blog */
+
+/* Categories Selector */
+
+.categories-selector {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(to right, #262B32, #4D5666);
+
+    a {
+        font-family: "Lato", sans-serif;
+        font-size: 2.4rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        padding: .8rem 1.6rem;
+        border: solid .3rem transparent;
+        border-radius: 10rem;
+        transition: .3s;
+
+        &.exemple1 {
+            background: #1E6D78;
+            &:hover{
+                background: #fff;
+                border-color: #1E6D78;
+                color: #1E6D78;
+            }
+        }
+
+        &.exemple2 {
+            background: #F67976;
+            &:hover{
+                background: #fff;
+                border-color: #F67976;
+                color: #F67976;
+            }
+        }
+
+        &.exemple3 {
+            background: #1E7841;
+            &:hover{
+                background: #fff;
+                border-color: #1E7841;
+                color: #1E7841;
+            }
+        }
+
+        &.exemple4 {
+            background: #F6C076;
+            &:hover{
+                background: #fff;
+                border-color: #F6C076;
+                color: #F6C076;
+            }
+        }
+
+        &.exemple5 {
+            background: #4E1E78;
+            &:hover{
+                background: #fff;
+                border-color: #4E1E78;
+                color: #4E1E78;
+            }
+        }
+
+        &.exemple6 {
+            background: #67781E;
+            &:hover{
+                background: #fff;
+                border-color: #67781E;
+                color: #67781E;
+            }
+        }
+
+        &.exemple7 {
+            background: #76C0F6;
+            &:hover{
+                background: #fff;
+                border-color: #76C0F6;
+                color: #76C0F6;
+            }
+        }
+
+        &.exemple8 {
+            background: #781E1E;
+            &:hover{
+                background: #fff;
+                border-color: #781E1E;
+                color: #781E1E;
+            }
+        }
+
+        &.exemple9 {
+            background: #BB76F6;
+            &:hover{
+                background: #fff;
+                border-color: #BB76F6;
+                color: #BB76F6;
+            }
+        }
+
+        &.exemple10 {
+            background: #781E48;
+            &:hover{
+                background: #fff;
+                border-color: #781E48;
+                color: #781E48;
+            }
+        }
+
+        &.exemple11 {
+            background: #F67976;
+            &:hover{
+                background: #fff;
+                border-color: #F67976;
+                color: #F67976;
+            }
+        }
+
+        &.exemple12 {
+            background: #F676C0;
+            &:hover{
+                background: #fff;
+                border-color: #F676C0;
+                color: #F676C0;
+            }
+        }
+
+    }
+
+}
+
+/* Top Article */
+
+.top-article {
+
+    .title {
+        padding: 2.5rem 5rem;
+        background: linear-gradient(to right, #A47311, #EFC164);
+        margin-bottom: 3rem;
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 5.1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+    }
+
+    .article {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+/* Last Article */
+
+.last-article {
+
+    .title {
+        padding: 2.5rem 5rem;
+        background: linear-gradient(to right, #A47311, #EFC164);
+        margin-bottom: 3rem;
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 5.1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+    }
+
+    .article {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .break {
+            width: 100%;
+        }
+    }
+
+}
