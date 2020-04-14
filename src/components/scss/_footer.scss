@@ -1,0 +1,99 @@
+/* Footer */
+
+footer {
+
+    .accueil1 {
+        background: linear-gradient(90deg, #1E6C77, #46BFD0);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .accueil2 {
+        background: linear-gradient(#1E6C77, #46BFD0);
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .formation1 {
+        background: linear-gradient(90deg, #262B32, #4D5666);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .formation2 {
+        background: linear-gradient(#262B32, #4D5666);
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .article1 {
+        background: linear-gradient(90deg, #A47311, #EFC164);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .article2 {
+        background: linear-gradient(#A47311, #EFC164);
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .nav-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 75.5rem;
+        margin: 0 auto;
+
+        li {
+
+            padding-bottom: 3rem;
+
+            a {
+                font-family: 'Ubuntu', sans-serif;
+                text-decoration: none;
+                font-size: 1.6rem;
+                padding: .75rem 0.5rem;
+                text-transform: uppercase;
+                color: #fff;
+                background: linear-gradient(to right, black 50%, transparent 50%);
+                background-size: 225% 100%;
+                background-position: right bottom;
+                transition: all .3s ease-out;
+
+                &:hover {
+                    background-position: left bottom;
+                    color: #98C379;
+                }
+
+            }
+
+        }   
+
+    }
+
+    .social-icon {
+        display: flex;
+        justify-content: space-between;
+        width: 75.5rem;
+        margin: 0 auto;
+        
+        i {
+            color: #fff;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+
+        }
+
+    }
+
+    div p {
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+}
