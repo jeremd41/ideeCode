@@ -1,0 +1,34 @@
+.content-solutions {
+
+    .container {
+
+        display: grid;
+        grid-template-areas: "😀 "
+                             "😀 ";
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        width: 140rem;
+        margin: 0 auto;
+
+        .content {
+            grid-area: "😀";
+            padding-right: 10rem;
+
+            h3 {
+                text-align: center;
+                font-size: 5.1rem;
+                font-weight: 900;
+                font-family: 'Lato', sans-serif;
+            }
+
+            p {
+                font-size: 3.4rem;
+                font-family: 'Titillium Web', sans-serif;
+                padding-top: 1.5rem,
+            }
+
+        }
+
+    }
+
+}

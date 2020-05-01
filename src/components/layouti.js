@@ -14,14 +14,14 @@ class Layouti extends Component {
         <div>
             <nav className={this.props.bgnav}>
                 <div className ="container">
-                    <div>
+                    <div className={this.props.bgnav + " logo"}>
                         <h1>
                             <Link to="/">
                                 <img src={Logo} alt="Idée Code" />
                             </Link>
                         </h1>
                     </div>
-                    <div>
+                    <div className={this.props.bgnav + " menu-ctn"}>
                         <ul className="menu">
                             <li><Link to="/">Accueil</Link></li>
                             <li><Link to="/solutions/">Solutions</Link></li>

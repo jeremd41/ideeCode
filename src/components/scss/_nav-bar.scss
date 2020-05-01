@@ -1,5 +1,21 @@
 /*Nav-Bar*/
 
+.accueil {
+    background: linear-gradient(90deg, #1E6C77, #46BFD0);
+}
+
+.formation {
+    background: linear-gradient(90deg, #262B32, #4D5666);
+}
+
+.article {
+    background: linear-gradient(90deg, #A47311, #EFC164);
+}
+
+div.accueil, div.formation, div.article {
+    background: transparent;
+}
+
 nav {
 
     padding-top: 4.8rem;
@@ -9,18 +25,6 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
-
-    &.accueil {
-        background: linear-gradient(90deg, #1E6C77, #46BFD0);
-    }
-
-    &.formation {
-        background: linear-gradient(90deg, #262B32, #4D5666);
-    }
-
-    &.article {
-        background: linear-gradient(90deg, #A47311, #EFC164);
-    }
 
     .container {
         width: 133.5rem;
@@ -96,6 +100,138 @@ nav {
                 }
             }
 
+        }
+
+    }
+
+}
+
+@media (max-width: 1331.98px) {
+
+    nav {
+
+        .container {
+            width: 120rem;
+        }
+
+        .menu {
+            width: 90rem;
+        }
+
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+
+    nav {
+
+        .container {
+            width: 99rem;
+        }
+
+        .menu {
+            width: 75rem;
+
+            a {
+                font-size: 1.8rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width : 768.98px) {
+
+    .accueil {
+        background: transparent;
+    }
+    
+    .formation {
+        background: transparent;
+    }
+    
+    .article {
+        background: transparent;
+    }
+
+    nav {
+        
+        padding-top: initial;
+        padding-bottom: initial;
+        width: initial;
+        position: initial;
+        top: initial;
+        left: initial;
+        z-index: initial;
+
+        .container {
+
+            width: initial;
+            margin: initial;
+            display: initial;
+            justify-content: initial;
+
+            .menu {
+                width: initial;
+                height: initial;
+                display: initial;
+                justify-content: initial;
+                align-items: initial;
+        
+                li{
+                    transition: 0.3s;
+        
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
+                }
+        
+            }
+
+        }
+
+    }
+
+    nav .container div.accueil {
+        background: linear-gradient(90deg, #1E6C77, #46BFD0);
+    }
+    
+    div.formation {
+        background: linear-gradient(90deg, #262B32, #4D5666);
+    }
+    
+    div.article {
+        background: linear-gradient(90deg, #A47311, #EFC164);
+    }
+
+    nav {
+
+        .logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .menu-ctn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            .menu {
+                display: flex;
+                width: 100%;
+            }
         }
 
     }

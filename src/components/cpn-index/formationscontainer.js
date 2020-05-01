@@ -12,7 +12,7 @@ class FormationContainer extends Component {
                         <p>Votre budget est limité mais vos croyez profondément à votre projet ? Des guides pas à pas pour réaliser et mettre en marche votre projet.</p>
                     </div>
                     <div className="second">
-                        <Link to="/formations/">Accéder aux formations</Link>
+                        <Link to="/formation/">Accéder aux formations</Link>
                     </div>
                 </div>
             </section>
