@@ -17,51 +17,42 @@ class ContentContact extends Component {
         displayFormMel:" ",
         indexFormMel:" ",
     }
-    handleClickTel=() =>{
+     handleClickTel=() =>{
         this.setState({
             alignHeadTel:" transi align",
-        })
-        this.setState({
             removeBtnTel:" transi transformmoins",
-        })
-        this.setState({
             removeMailTel:" transi transformplus",
-        })
-        this.setState({
             displayFormTel:" display",
+            indexFormTel:" index",
+            displayFormMel:" ",
         })
-        const id = setInterval(() => {
-            this.setState ({
-                indexFormTel:" index"
-            })
-        }, 1000)
-        clearInterval(id)
     }
     handleClickReturnTel=() =>{
         this.setState({
-            alignHeadTel:" ",
-            removeBtnTel:" ",
-            removeMailTel:" ",
-            displayFormTel:" ",
+            alignHeadTel:" transi",
+            removeBtnTel:" transi",
+            removeMailTel:" transi",
+            displayFormTel:" delay",
             indexFormTel:" ",
         })
     }
     handleClickMel=() =>{
         this.setState({
-            alignHeadMel:" align2",
-            removeBtnMel:" transformplus",
-            removeTelMel:" transformmoins",
+            alignHeadMel:" transi align2",
+            removeBtnMel:" transi transformplus",
+            removeTelMel:" transi transformmoins",
             displayFormMel:" display",
             indexFormMel:" index",
+            displayFormTel:" ",
         })
       }
     
     handleClickReturnMel=() =>{
         this.setState({
-            alignHeadMel:" ",
-            removeBtnMel:" ",
-            removeTelMel:" ",
-            displayFormMel:" ",
+            alignHeadMel:" transi",
+            removeBtnMel:" transi",
+            removeTelMel:" transi",
+            displayFormMel:" delay",
             indexFormMel:" ",
         })
       }
@@ -90,9 +81,9 @@ class ContentContact extends Component {
                         </div>
                     </div>
                 </div>
-                <div className={"container-form" + " " +  this.state.indexFormTel + this.state.displayFormTel}>
+                <div className={"container-form" + " " +  this.state.indexFormTel + this.state.displayFormMel}>
                     <div className="first-part">
-                        <button className="reset return-btn" onClick={this.handleClickReturnTel}><i className="fa fa-arrow-left" aria-hidden="true"></i>Retour</button>
+                        <button className="reset return-btn" onClick={this.handleClickReturnTel}>Retour</button>
                         <form>
                             <div>
                                 <label htmlFor="ipt-name">Prénom</label>
@@ -129,9 +120,9 @@ class ContentContact extends Component {
                         <img src={ContactTel} alt=""/>
                     </div>
                 </div>
-                <div className={"container-form" + " " + this.state.displayFormMel + this.state.indexFormMel}>
+                <div className={"container-form" + " " + this.state.displayFormTel + this.state.indexFormMel}>
                     <div className="first-part">
-                        <button className="reset return-btn" onClick={this.handleClickReturnMel}><i className="fa fa-arrow-left" aria-hidden="true"></i>Retour</button>
+                        <button className="reset return-btn" onClick={this.handleClickReturnMel}>Retour</button>
                         <form>
                             <div>
                                 <label htmlFor="ipt-name">Prénom</label>
