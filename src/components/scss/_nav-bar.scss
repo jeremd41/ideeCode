@@ -17,9 +17,6 @@ div.accueil, div.formation, div.article {
 }
 
 nav {
-
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -27,30 +24,36 @@ nav {
     z-index: 10;
 
     .container {
-        width: 133.5rem;
+        width: 100%;
         margin: 0 auto;
+        padding: 0 35px;
         display: flex;
         justify-content: space-between;
     }
 
     img {
-        height: 5.5rem;
-        width: auto;
+        height: auto;
+        width: 150px;
         margin: 0;
 
     }
 
     h1 {
-        transition: 0.3s;
+        padding-top: 15px;
+    }
 
-        &:hover {
-            transform: scale(1.5);
-        }
+    .logo{
+        line-height: 80px;
+    }
+
+    .menu-ctn{
+        width: 50%;
+
     }
 
     .menu {
-        width: 105rem;
-        height: 5.5rem;
+        width: 100%;
+        height: 80px;
         list-style-type: none;
         display: flex;
         justify-content: space-between;
@@ -59,22 +62,22 @@ nav {
         li{
             transition: 0.3s;
 
-            &:hover {
-                transform: scale(1.5);
-            }
-
         }
         
         a {
-            font-size: 2rem;
+            font-size: 16px;
             font-family: 'Ubuntu', sans-serif;
             font-weight: bold;
             text-decoration: none;
             color: #fff;
 
+            &:hover {
+                color: #313642
+            }
+
             &.btn-grey {
                 background: #313642;
-                padding: 1.5rem .6rem;
+                padding: 7px;
                 border-radius: 2.7rem;
                 transition: 0.3s;
                 border: solid transparent .2rem;
@@ -88,7 +91,6 @@ nav {
 
             &.btn-blue {
                 background: #46BFD0;
-                padding: 1.5rem .6rem;
                 border-radius: 2.7rem;
                 transition: 0.3s;
                 border: solid transparent .2rem;

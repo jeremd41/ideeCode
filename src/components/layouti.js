@@ -8,7 +8,7 @@ import Logo from "../images/logo.png"
 
 class Layouti extends Component {
   render() {
-    const {children} =this.props
+    const {children} = this.props
     
     return (
         <div>
@@ -28,7 +28,6 @@ class Layouti extends Component {
                             <li><Link to="/formation/">Formation</Link></li>
                             <li><Link to="/blog/">Blog</Link></li>
                             <li><Link to="/contact/">Contact</Link></li>
-                            <li><Link to="/contact/" className={this.props.btnnav}>Demander une Démo</Link></li>
                             <li><Link to="/login/" className={this.props.btnnav}>Se Connecter</Link></li>
                         </ul>
                     </div>
