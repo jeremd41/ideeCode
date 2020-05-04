@@ -13,11 +13,6 @@ class CategorieSelector extends Component {
                 <Link to="/blog/" className="exemple5">Lorem</Link>
                 <Link to="/blog/" className="exemple6">Lorem</Link>
                 <Link to="/blog/" className="exemple7">Lorem</Link>
-                <Link to="/blog/" className="exemple8">Lorem</Link>
-                <Link to="/blog/" className="exemple9">Lorem</Link>
-                <Link to="/blog/" className="exemple10">Lorem</Link>
-                <Link to="/blog/" className="exemple11">Lorem</Link>
-                <Link to="/blog/" className="exemple12">Lorem</Link>
             </section>
         )
     }
