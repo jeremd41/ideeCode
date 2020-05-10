@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Img from "gatsby-image"
 
 import { Link } from "gatsby"
 
@@ -7,16 +8,22 @@ class PostSquare extends Component {
         return (
             <section className="postsquare">
                 <div className="img-container">
-                    <img src={this.props.imgpostsquare} alt={this.props.altpostsquare}/>
+                    <Img fluid={this.props.imgpostsquare} alt={this.props.altpostsquare}/>
                 </div>
                 <div className="half-flex">
-                    <div className="content-container"> 
-                        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est …</p>
+                    <div className="content-container">
+                        <Link to={this.props.slug}>
+                            <h3>{this.props.title}</h3>
+                        </Link>
+                        <p>{this.props.excerpt.substring(0, 100)}...</p>
                     </div>
                     <div className="categories-container">
-                        <Link to="/blog/" className="categories exemple1">Catégories</Link>
-                        <Link to="/blog/" className="categories exemple2">Date</Link>
+                        {this.props.tags.map((item, key) => {
+                            return(
+                            <Link key={key}to="/blog/" className="categories exemple1">{item}</Link>
+                            )
+                        })}
+                        <Link to="/blog/" className="categories exemple2">{this.props.date}</Link>
                     </div>
                 </div>
             </section>

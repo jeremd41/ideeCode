@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import SEO from "../components/seo"
 import Layouti from "../components/layouti"
 import HeroVidTitle from "../components/herovidtitle"
-import Post from "../components/cpn-article/post"
+import Post from "../templates/blogpost"
 
 
 import postvid from "../images/post.mp4"

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `IdéeCode`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@bdcreations`,
+    description: `Agence de développemnt web et mobile`,
+    author: `Jérémy Diard - IdéeCode`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -16,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
