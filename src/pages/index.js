@@ -15,7 +15,7 @@ import "../components/scss/style.scss"
 class index extends Component {
   render() {
     return (
-        <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="accueil2">
+        <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="formation2">
           <SEO title="Accueil" />
           <HeroVidButton/>
           <SolutionsContainer/>

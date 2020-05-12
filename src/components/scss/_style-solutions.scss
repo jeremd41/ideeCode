@@ -1,4 +1,7 @@
 .content-solutions {
+    background: linear-gradient(to right, #262B32, #4D5666);
+    color: #fff;
+    padding: 20px;
 
     .container {
 
@@ -7,24 +10,26 @@
                              "😀 ";
         padding-top: 6rem;
         padding-bottom: 3rem;
-        width: 140rem;
-        margin: 0 auto;
+        width: 100%;
+        margin: 30px 0;
 
         .content {
             grid-area: "😀";
             padding-right: 10rem;
 
+            
+
             h3 {
-                text-align: center;
-                font-size: 5.1rem;
+                font-size: 24px;
                 font-weight: 900;
                 font-family: 'Lato', sans-serif;
             }
 
             p {
-                font-size: 3.4rem;
+                font-size: 18px;
                 font-family: 'Titillium Web', sans-serif;
-                padding-top: 1.5rem,
+                padding-top: 1.5rem;
+                width: 60%;
             }
 
         }

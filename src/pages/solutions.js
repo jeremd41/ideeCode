@@ -11,10 +11,12 @@ import solutionsvid from '../images/solutions.mp4'
 class Solutions extends Component {
     render () {
         return (
-            <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="accueil2">
+            <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="formation2">
                 <SEO title="Solutions" />
                 <HeroVidTitle videobg={solutionsvid} title="Solutions"/>
-                <Client />
+                <div style={{marginTop: 50, marginBottom: 50}}>
+                    <Client />
+                </div>
                 <ContentSolutions/>
                 <Emailing/>
             </Layouti>

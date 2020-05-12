@@ -14,7 +14,7 @@ export default () => {
               title
               tags
               featuredImage {
-                fluid(maxWidth: 1200){
+                fluid(maxWidth: 1200, maxHeight: 600){
                     ...GatsbyContentfulFluid
                 }
               }

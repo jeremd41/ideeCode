@@ -111,7 +111,7 @@ class ContentContact extends Component {
                             </div>
                             <div className="radio-container">
                                 <label htmlFor="ipt-check" className="label-check">J’accepte que l’on conserve mes données pour prendre le rendez-vous.</label>
-                                <input  type="radio" className="ipt ipt-check" id="ipt-check" required/>
+                                <input  type="checkbox" className="ipt ipt-check" id="ipt-check" required/>
                             </div>
                             <input type="submit" value="Envoyer" className="ipt-submit"/>
                         </form>
@@ -136,10 +136,6 @@ class ContentContact extends Component {
                                 <label htmlFor="ipt-email">Adresse E-Mail</label>
                                 <input  type="email" className="ipt ipt-email" id="ipt-email" placeholder="Adresse E-mail" required/>
                             </div>
-                            <div className="radio-container">
-                                <label htmlFor="ipt-check" className="label-check">J’accepte que l’on conserve mes données pour prendre contact</label>
-                                <input  type="radio" className="ipt ipt-check" id="ipt-check" required/>
-                            </div>
                             <div>
                                 <label htmlFor="ipt-object">Objet</label>
                                 <input  type="text" className="ipt ipt-object" id="ipt-object" placeholder="Objet" required/>
@@ -147,6 +143,10 @@ class ContentContact extends Component {
                             <div>
                                 <label htmlFor="ipt-msg">Message</label>
                                 <textarea id="ipt-msg" placeholder="Message" required/>
+                            </div>
+                            <div className="radio-container">
+                                <label htmlFor="ipt-check" className="label-check">J’accepte que l’on conserve mes données pour prendre contact</label>
+                                <input  type="checkbox" className="ipt ipt-check" id="ipt-check" required/>
                             </div>
                             <input type="submit" value="Envoyer" className="ipt-submit"/>
                         </form>
