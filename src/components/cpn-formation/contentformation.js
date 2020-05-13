@@ -20,7 +20,7 @@ class ContentFormation extends Component {
                 </div>
                 <p>Ici formez-vous et développer par vous-même vos propres besoins.</p>
                 <div className="btn">
-                    <Link to="//">Consulter le catalogue</Link>
+                    <Link to="/login/">Consulter le catalogue</Link>
                 </div>
                 <p>Chaque formation est accompagné d’un dossier avec tous les outils nécessaires.</p>
             </section>

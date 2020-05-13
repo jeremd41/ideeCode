@@ -29,7 +29,7 @@ export default () => {
   `)
   const blogPost = data.allContentfulBlogPost.edges
   return (
-    <section style={{background: "linear-gradient(to right, #262B32, #4D5666)"}} className="last-article">
+    <section className="last-article">
         <div className="title">
             <h2>Les derniers articles</h2>
         </div>
