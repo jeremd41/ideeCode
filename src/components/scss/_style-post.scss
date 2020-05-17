@@ -127,6 +127,44 @@
 
     .group-btn-share{
         display: flex;
+        justify-content: space-between;
+        list-style-type:none;
+        width: 100%;
+
+        li{
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            margin: 15px; 
+            color: #fff;
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 6.5rem;
+            height: 35px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+
+        i{
+            margin: 0 10px; 
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn-facebook{
+            background:#3b5998;
+        }
+
+        .btn-twitter{
+            background:#00acce;
+        }
+
+        .btn-linkedin{
+            background:#0e76a8;
+        }
     }
 
     margin-top: 6.5rem;
