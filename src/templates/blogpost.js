@@ -27,9 +27,32 @@ const BlogPost = ({ data }) => {
                     <p className="excerpt-post">{details.excerpt.excerpt}</p>
                     <p className="author-post">{details.datePublication} par <strong>Jérémy DIARD</strong></p>
                     <Img className="image-post" fluid={details.featuredImage.fluid} alt="test" />
+                    <ul className="group-btn-share">
+                        <li className="btn-facebook"><a><i className="fa fa-facebook-square " aria-hidden="true"></i>Partager</a></li>
+                        <li className="btn-twitter"><a><i className="fa fa-twitter-square " aria-hidden="true"></i>Twitter</a></li>
+                        <li className="btn-linkedin"><a><i className="fa fa-linkedin-square " aria-hidden="true"></i>Linkedin</a></li>
+                    </ul>
                     <p className="body-blogpost" dangerouslySetInnerHTML={{__html:details.body.childMarkdownRemark.html}} />
                 </article>
                 <div className="sidebar-post">
+                    <div className="content-sidebar">
+                        <div className="item-content-sidebar-1">
+                            <h3>Vous-en voulez plus ?</h3>
+                            <p> Nous partageons des techniques, des astuces et du contenu exclusivement par mail !</p>
+                            <label>Votre E-mail !
+                                <input  type="text" className="ipt ipt-name" id="ipt-name" placeholder="Votre E-mail" required/>
+                            </label>
+                            <button>Envoyer !</button>
+                        </div>    <div className="item-content-sidebar-2">
+                            <h3>Nos réseaux !</h3>
+                            <ul className="social-icon">
+                                <li><a href="https://www.linkedin.com/"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/"><i className="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/"><i className="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/"><i className="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             
