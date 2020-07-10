@@ -240,16 +240,19 @@
         padding-bottom: 5rem;
     }
 
-    .client {
+    .client{
         display: flex;
         justify-content: space-around;
-        align-items: center;
+    }
 
-        img {
-            height: 5rem;
-            margin-bottom: 5rem;
-        }
+    .client-item{
+        width: 11%;
+        height: 100%;
+    }
 
+    .img{
+        width:100%;
+        height:auto ;
     }
 
 }

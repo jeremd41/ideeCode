@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import Logo from "../images/logo.png"
+import Logo from "../images/logo.png";
+
+
 
 
 
