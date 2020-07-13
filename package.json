@@ -1,7 +1,7 @@
 {
-  "name": "idee-code-site",
+  "name": "finition-page-solution",
   "private": true,
-  "description": "site de l'agence idéeCode ",
+  "description": "",
   "version": "0.1.0",
   "author": "Jérémy Diard <webizy.france@gmail.com>",
   "dependencies": {
@@ -30,9 +30,7 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
