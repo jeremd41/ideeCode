@@ -6,7 +6,7 @@ class ContentSolutions extends Component {
   render() {
     return (
       <section className="content-solutions">
-        <div className="container left">
+        <div className="container">
           <div className="content">
             <h3>Stratégies / Conseils / Formation</h3>
             <p>
@@ -20,7 +20,7 @@ class ContentSolutions extends Component {
           </div>
           <i className="fa fa-line-chart fa-5x" aria-hidden="true" />
         </div>
-        <div className="container right">
+        <div className="container reverse">
           <div className="content">
             <h3>Développement / Déploiement</h3>
             <p>
@@ -33,7 +33,7 @@ class ContentSolutions extends Component {
           </div>
           <i className="fa fa-file-code-o fa-5x" aria-hidden="true" />
         </div>
-        <div className="container left">
+        <div className="container">
           <div className="content">
             <h3>Maintenance / Hébergement</h3>
             <p>

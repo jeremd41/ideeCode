@@ -16,16 +16,16 @@
         {
           "id": "codesandbox.browser",
           "options": {
-            "port": 8000,
-            "url": "https://kjz1z-8000.sse.codesandbox.io"
+            "port": 50400,
+            "url": "https://8190u-50400.sse.codesandbox.io"
           },
           "closeable": true
         },
         {
           "id": "codesandbox.browser",
           "options": {
-            "port": 41277,
-            "url": "https://kjz1z-41277.sse.codesandbox.io"
+            "port": 8000,
+            "url": "https://8190u-8000.sse.codesandbox.io"
           },
           "closeable": true
         }

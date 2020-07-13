@@ -3,21 +3,26 @@
     color: #fff;
     padding: 20px;
 
-    .container {
+    .reverse{
+        flex-direction: row-reverse;
+    }
 
-        display: grid;
-        grid-template-areas: "😀 "
-                             "😀 ";
+    .container {
         padding-top: 6rem;
         padding-bottom: 3rem;
         width: 100%;
-        margin: 30px 0;
+        margin: 30px auto;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        i{
+            width: 10%;
+            font-size: 15rem;
+        }
 
         .content {
-            grid-area: "😀";
-            padding-right: 10rem;
-
-            
+            width: 50%;
 
             h3 {
                 font-size: 24px;
@@ -29,7 +34,6 @@
                 font-size: 18px;
                 font-family: 'Titillium Web', sans-serif;
                 padding-top: 1.5rem;
-                width: 60%;
             }
 
         }
