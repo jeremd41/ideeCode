@@ -3,28 +3,26 @@
     color: #fff;
     padding: 20px;
 
-    .left{
-        justify-content: flex-start;
-    }
-
-    .right{
-        justify-content: flex-end;
+    .reverse{
+        flex-direction: row-reverse;
     }
 
     .container {
-
-        display: flex;
         padding-top: 6rem;
         padding-bottom: 3rem;
         width: 100%;
-        margin: 30px 0;
+        margin: 30px auto;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
 
-        
+        i{
+            width: 10%;
+            font-size: 15rem;
+        }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
+            width: 50%;
 
             h3 {
                 font-size: 24px;
@@ -36,7 +34,6 @@
                 font-size: 18px;
                 font-family: 'Titillium Web', sans-serif;
                 padding-top: 1.5rem;
-                width: 60%;
             }
 
         }
