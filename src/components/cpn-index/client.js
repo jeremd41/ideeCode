@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
 import Client1 from "../../images/client1.png"
-import Client2 from "../../images/client2.png"
+import Client2 from "../../images/client2.svg"
 import Client3 from "../../images/client3.png"
 import Client4 from "../../images/client4.svg"
 import Client5 from "../../images/client5.png"
 import Client6 from "../../images/fireblog.png"
+import Client7 from "../../images/client6.png"
 
 
 class Client extends Component {
@@ -40,6 +41,11 @@ class Client extends Component {
             client: Client6,
             name:"Fireblog",
             link:"https://fireblogcms.com/"
+          },
+          {
+            client: Client7,
+            name:"Enzym",
+            link:"https://enzym.io/"
           },
       ]
 

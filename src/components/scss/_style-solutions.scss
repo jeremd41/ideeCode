@@ -3,21 +3,28 @@
     color: #fff;
     padding: 20px;
 
+    .left{
+        justify-content: flex-start;
+    }
+
+    .right{
+        justify-content: flex-end;
+    }
+
     .container {
 
-        display: grid;
-        grid-template-areas: "😀 "
-                             "😀 ";
+        display: flex;
         padding-top: 6rem;
         padding-bottom: 3rem;
         width: 100%;
         margin: 30px 0;
 
-        .content {
-            grid-area: "😀";
-            padding-right: 10rem;
+        
 
-            
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
 
             h3 {
                 font-size: 24px;

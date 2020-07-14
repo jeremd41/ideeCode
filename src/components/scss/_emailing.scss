@@ -10,9 +10,19 @@
 
     .img-container {
         padding-right: 10rem;
+        
 
         img{
             height: 20rem;
+            position: relative;
+            animation: waves 1.2s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes waves {
+            0%{ top: 30px;}
+            50%{ top: 5px;}
+            100%{top: 0px}
         }
     }
 

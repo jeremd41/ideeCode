@@ -14,7 +14,7 @@ class Solutions extends Component {
             <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="formation2">
                 <SEO title="Solutions" />
                 <HeroImgTitle bgImg={solutionHero} title="Solutions"/>
-                <div style={{marginTop: 50, marginBottom: 50}}>
+                <div style={{marginTop: 50}}>
                     <Client />
                 </div>
                 <ContentSolutions/>
