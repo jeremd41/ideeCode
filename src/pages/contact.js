@@ -12,7 +12,6 @@ class Contact extends Component {
         return (
             <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="accueil2">
                 <SEO title="Contact" />
-                <HeroImgTitle bgImg={contactHero} title="Contact"/>
                 <ContentContact/>
             </Layouti>
         )

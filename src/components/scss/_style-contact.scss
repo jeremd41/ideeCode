@@ -1,254 +1,121 @@
 .content-contact {
+    margin:9.5rem auto;
+    font-family: 'Lato', sans-serif;
 
-    overflow: hidden;
+    input:focus{
+        outline:none;
+        box-shadow: 0 0 0pt 1pt #1E6C77;
+    }
+
+    textarea:focus{
+        outline:none;
+        box-shadow: 0 0 0pt 1pt #1E6C77;
+    }
 
     .title {
-
-        h2 {
-            text-align: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 26px;
-            font-weight: 900;
-            text-transform: uppercase;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
     }
 
-    .container {
+    .cadre-form{
+        width: 70%;
+        height:500px;
+        margin: 25px auto;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px 0 rgba(0,0,0,.3);
+    }
 
+    .img-part{
+        width: 30%;
         display: flex;
         align-items: center;
-        margin: 0 auto;
-
-        h3 {
-            text-align: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 26px;
-            font-weight: 900;
-            text-transform: uppercase;
+        padding: 25px;
+        border-radius: 10px;
+        border-top-right-radius: 30px 200px;
+        border-bottom-right-radius: 30px 200px;
+        background: #ECF4F4;
+        img{
+            display: block;
+            width:100%;
+            height: auto;
         }
-
-        .tel, .mail {
-            width: 50%;
-
-            .btn-container {
-
-                padding: 30rem 0;
-                background: #fff;
-
-                button {
-                    text-align: center;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 20px;
-                    font-weight: 900;
-                    text-transform: uppercase;
-                    background: #F67976;
-                    border: #F67976 .25rem solid;
-                    color: #fff;
-                    width: 200px;
-                    height: 50px;;
-                    border-radius: 6.2rem;
-                    transition: .3s;
-                    display: block;
-                    margin: 0 auto;
-
-                    &:hover {
-                        background: #fff;
-                        color: #F67976;
-                        cursor: pointer;
-                    }
-
-                }
-            
-            }
-
-        }
-
-        .line {
-            border-left: .3rem solid #000;
-            height: 45rem;
-        }
-
-        .reset {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-
     }
 
-    .container-form {
-
+    .form-part{
+        width: 70%;
+        height:100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
-        height: 35.5rem;
-        width: 100%;
-        float: right;
-        position: relative;
-        margin-top: -60rem;
-        opacity: 1;
-        z-index: -1;
 
-        .first-part {
-            width: 60%;
-            form {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                height: 35.5rem;
-                div {
-                    padding-bottom: 1rem;
+        form{
+            position: relative;
+            height: 100%;
+            padding:25px; 
+        }
+
+        button{
+            width:80px;
+            height:35px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 5%;
+            right:5%;
+            background: #1E6C77;
+            border: none;
+            color:#fff;
+            border-radius: 2rem;
+            font-size:14px;   
+        }
+
+        button:hover{
+            background: #fff;
+            color:#1E6C77 ;
+            border: 2px solid #1E6C77;
+
+        }
+
+        .form-part-info{
+
+            label{
+                display: block;
+                width:55%;
+                margin: 15px;
+                font-size: 16px;
+                padding-left: 30px;
+            }
     
-                    label {
-                        display: block;
-                        font-family: 'Titillium Web', sans-serif;
-                        font-size: 16px;
-                        line-height: 2.4rem;
-                        padding-bottom: .5rem;
-                        padding-left: .5rem;
-    
-                        &.label-check {
-                            font-size: 2rem;
-                            width: 26.5rem;
-                        }
-                    }
-                    input {
-                        display: block;
-                        width: 175px;
-                        height: 50px;
-                        font-family: 'Titillium Web', sans-serif;
-                        font-size: 16px;
-                        border: .1rem solid #707070;
-                        border-radius: 6.2rem;
-                        padding-left: 10px;
-                        padding-right: 10px;
-
-                    }
-
-                    textarea {
-                        resize: none;
-                        width: 35.5rem;
-                        height: 12.5rem;
-                        font-family: 'Titillium Web', sans-serif;
-                        font-size: 2rem;
-                        border: .1rem solid #707070;
-                        border-radius: 3rem;
-                        padding-left: 2.5rem;
-                        padding-right: 2.5rem;
-
-                        &::placeholder {
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-    
-                .ipt-submit {
-                    text-transform: uppercase;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 20px;
-                    font-weight: 900;
-                    background: #F67976;
-                    color: #fff;
-                    border: .25rem solid #F67976;
-                    border-radius: 6.2rem;
-                    padding: 15px;
-                    transition: .3s;
-
-                    &:hover {
-                        color: #F67976;
-                        background: #fff;
-                    }
-
-                }
-    
-                .radio-container {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 12rem;
-    
-                    input {
-                        width: 4rem;
-                        height: 4rem;
-                        background: #fff;
-                        border: .1rem solid #707070;
-                    }
-                }
+            input{
+                border: 1px solid #111;
+                border-radius: 2rem;
+                float: right;
+                padding:5px;
+                font-size: 14px;
             }
         }
+        
 
-        .second-part {
+        .input-message{
+            display: block;
+            width:98%;
+            margin: 15px;
+            font-size: 16px;
+            padding-left: 30px;
 
-            width: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            img {
-                height: 60%;
-            }
-
-        }
-
-
-    }
-
-    .transformmoins {
-        transform: translateX(-50vw);
-    }
-
-    .transformplus {
-        transform: translateX(50vw);
-    }
-
-    .align {
-        transform: translateX(50%);
-    }
-
-    .align2 {
-        transform: translateX(-50%);
-    }
-
-    .display {
-        opacity: 0;
-    }
-
-    .transi {
-        transition: 1s;
-    }
-
-    .delay {
-        transition-delay: 1s;
-    }
-
-    .index {
-        transition-delay: 1s;
-        z-index: 9;
-    }
-
-    .return-btn {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.8rem;
-        border: 0;
-        cursor: pointer;
-        margin-left: 5rem;
-        margin-bottom: 2rem;
-        &::before {
-            font-family: "FontAwesome";
-            content: "\f060";
-            transition: .3s;
-            padding-right: 2rem;
-        }
-        &:hover {
-            &::before {
-                padding-left: 1rem;
+            textarea{
+                resize: none;
+                padding: 5px;
+                border: 1px solid #111;
+                border-radius: 2rem;
+                width:75%;
+                height: 200px;
+                float: right;
+                overflow: auto;
             }
         }
     }
-
 }
