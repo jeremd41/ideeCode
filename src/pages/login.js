@@ -1,10 +1,23 @@
-import React, {Component} from "react"
+import React, {useState} from "react"
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import Layouti from "../components/layouti"
 import email from "../images/email2.png"
 
-class Login extends Component{
-    render(){
+const Login =  () => {
+    const [inputEmail, setEmail] = useState("");
+    const [sendEmail, setSend] = useState(false);
+
+    const handleChange = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await addToMailchimp(inputEmail)
+        setEmail("")
+        setSend(true)
+    }
         return(
             <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="formation2">
                 <div style={{marginTop: 100}}>
@@ -20,10 +33,11 @@ class Login extends Component{
                         <div className="input-container">
                             <label for="ipt-email">Laissez-nous votre plus belle adresse mail :)</label>
                             <div className="input">
-                                <form>
-                                    <input  type="email" className="input-email" id="ipt-email" placeholder="E-mail"/>
-                                    <button className="submit-email">Envoyer</button>
+                                <form onSubmit={handleSubmit}>
+                                    <input onChange={handleChange} value={inputEmail}  type="email" className="input-email" id="ipt-email" placeholder="E-mail"/>
+                                    <button type="submit" className="submit-email">Envoyer</button>
                                 </form>
+                                <p className="input-result">{sendEmail ?"Merci ! A bientôt dans votre boite mail":""}</p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +45,6 @@ class Login extends Component{
                 </div>
             </Layouti>
         )
-    }
 }
 
 export default Login
