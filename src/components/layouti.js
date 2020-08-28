@@ -4,13 +4,40 @@ import { Link } from "gatsby"
 
 import Logo from "../images/logo.png";
 
-
-
-
+import ModalEmailling from "./modalEmailling"
 
 class Layouti extends Component {
+    state = {
+        modalScrap:true
+    }
+
+    handleShowModal = () => {
+        this.setState({ modalScrap: !this.state.modalScrap});
+    };
+
+     
+
+    componentDidMount() {
+       /* let visited = sessionStorage["alreadyVisited"];
+        if(visited){
+            this.setState({ modalScrap: false })
+        }else{
+            sessionStorage["alreadyVisited"] = true;
+            setTimeout(()=>{
+                this.handleShowModal()
+             },1000);
+        }*/
+       
+    }
+
   render() {
     const {children} = this.props
+
+    let modal
+
+    if(this.state.modalScrap){
+        modal= <ModalEmailling cache={this.handleShowModal}/>
+    }
     
     return (
         <div>
@@ -35,7 +62,10 @@ class Layouti extends Component {
                     </div>
                 </div>
             </nav>
-            <main>{children}</main>
+            <main>
+                {modal}
+                {children}
+            </main>
             <footer>
                 <div className={this.props.bgfooter1}>
                     <ul className="nav-footer">

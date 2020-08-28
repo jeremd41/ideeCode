@@ -115,3 +115,87 @@
     }
 
 }
+
+/***** Modal emailling *****/
+.modal-emailling{
+
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 100%;
+
+    .modal-emailling-content{
+        width: 55%;
+        position: fixed;
+        margin: 25px auto;
+        top: 8%;
+        left: 18%;
+        z-index: 5;
+        background: #fff;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 1px 2px 7px #111;
+        background: linear-gradient(90deg, #1E6C77, #46BFD0);
+        color: #111;
+    }
+
+    .btnFermer{
+        width: 22px;
+        color:#111;
+        z-index:5;
+        height: 20px;
+        font-size: 20px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background: inherit;
+        border: none;
+        cursor: pointer;
+    }
+
+    .top-modal-emailling{
+        color:#fff;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 25px;
+        }
+
+        h1{
+            margin-bottom: 25px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .img-modal-emailling{
+            width:30%;
+        }
+
+        img{
+            width: 100%;
+            height:auto;
+        }
+    }
+
+    form{
+        height: auto;
+        background: grey;
+    }
+
+}
