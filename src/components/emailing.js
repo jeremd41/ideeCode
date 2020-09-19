@@ -16,7 +16,7 @@ const Emailing = () => {
         await addToMailchimp(inputEmail)
         setEmail("")
         setSend(true)
-      } 
+    } 
 
     return (
         <section className="emailing">

@@ -1,242 +1,164 @@
-/*Nav-Bar*/
+/*Nav-Bar nouvelle version*/
 
-.accueil {
+.header {
     background: linear-gradient(90deg, #1E6C77, #46BFD0);
-}
-
-.formation {
-    background: linear-gradient(90deg, #262B32, #4D5666);
-}
-
-.article {
-    background: linear-gradient(90deg, #1E6C77, #46BFD0);
-}
-
-div.accueil, div.formation, div.article {
-    background: transparent;
-}
-
-nav {
-    width: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0 2%;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+    margin: 7px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
 
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 35px;
-        display: flex;
-        justify-content: space-between;
+  
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    transition: 0.5s;
+    color: #313642;
+  }
+  
+  
+  .header .logo {
+    display: block;
+    float: left;
+    color: #fff;
+    width:15%;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+
+  
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    color: #fff;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    color: #fff;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 300px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header ul{
+        padding:5px 0;
     }
 
-    img {
-        height: auto;
-        width: 150px;
-        margin: 0;
-
+    .header li {
+      float: left;
+      padding: 5px 10px;
     }
 
-    h1 {
-        padding-top: 15px;
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
     }
 
-    .logo{
-        line-height: 80px;
-    }
-
-    .menu-ctn{
-        width: 50%;
-
-    }
-
-    .menu {
-        width: 100%;
-        height: 80px;
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        li{
-            transition: 0.3s;
-
-        }
+    .btn-grey {
+        background: #313642;
+        border-radius: 2.7rem;
+        transition: 0.3s;
+        border: solid transparent .2rem;
+        text-align: center;
         
-        a {
-            font-size: 16px;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: bold;
-            text-decoration: none;
-            color: #fff;
-
-            &:hover {
-                color: #313642
-            }
-
-            &.btn-grey {
-                background: #313642;
-                padding: 10px;
-                border-radius: 2.7rem;
-                transition: 0.3s;
-                border: solid transparent .2rem;
-
-                &:hover {
-                    background: #fff;
-                    color: #313642;
-                    border: solid #313642 .2rem;
-                }
-            }
-
-            &.btn-blue {
-                background: #46BFD0;
-                padding: 10px;
-                border-radius: 2.7rem;
-                transition: 0.3s;
-                border: solid transparent .2rem;
-
-                &:hover {
-                    background: #fff;
-                    color: #46BFD0;
-                    border: solid #46BFD0 .2rem;
-                }
-            }
-
-        }
-
-    }
-
-}
-
-@media (max-width: 1331.98px) {
-
-    nav {
-
-        .container {
-            width: 120rem;
-        }
-
-        .menu {
-            width: 90rem;
-        }
-
-    }
-
-}
-
-@media (max-width: 1199.98px) {
-
-    nav {
-
-        .container {
-            width: 99rem;
-        }
-
-        .menu {
-            width: 75rem;
-
-            a {
-                font-size: 1.8rem;
-            }
-
-        }
-
-    }
-
-}
-
-@media (max-width : 768.98px) {
-
-    .accueil {
-        background: transparent;
-    }
     
-    .formation {
-        background: transparent;
-    }
-    
-    .article {
-        background: transparent;
-    }
-
-    nav {
-        
-        padding-top: initial;
-        padding-bottom: initial;
-        width: initial;
-        position: initial;
-        top: initial;
-        left: initial;
-        z-index: initial;
-
-        .container {
-
-            width: initial;
-            margin: initial;
-            display: initial;
-            justify-content: initial;
-
-            .menu {
-                width: initial;
-                height: initial;
-                display: initial;
-                justify-content: initial;
-                align-items: initial;
-        
-                li{
-                    transition: 0.3s;
-        
-                    &:hover {
-                        transform: scale(1.5);
-                    }
-
-                }
-        
-            }
-
+        &:hover {
+            background: #fff;
+            color: #313642;
+            border: solid #313642 .2rem;
         }
-
     }
-
-    nav .container div.accueil {
-        background: linear-gradient(90deg, #1E6C77, #46BFD0);
-    }
-    
-    div.formation {
-        background: linear-gradient(90deg, #262B32, #4D5666);
-    }
-    
-    div.article {
-        background: linear-gradient(90deg, #A47311, #EFC164);
-    }
-
-    nav {
-
-        .logo {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
-
-        .menu-ctn {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            .menu {
-                display: flex;
-                width: 100%;
-            }
-        }
-
-    }
-
-}
+  }

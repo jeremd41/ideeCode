@@ -139,29 +139,37 @@
         height: auto;
         border-radius: 5px;
         box-shadow: 1px 2px 7px #111;
-        background: linear-gradient(90deg, #1E6C77, #46BFD0);
+
         color: #111;
     }
 
     .btnFermer{
-        width: 22px;
-        color:#111;
+        width: 30px;
+        color:#fff;
+        font-weight: bold;
         z-index:5;
-        height: 20px;
-        font-size: 20px;
+        height: 30px;
+        font-size: 16px;
+        font-family: "Titillium Web", sans-serif;
         position: absolute;
-        top: 5%;
-        right: 5%;
-        background: inherit;
-        border: none;
+        top: 3%;
+        right: 3%;
+        background:linear-gradient(90deg, #1E6C77, #46BFD0);
+        border: 1px;
+        border-radius: 14px;
         cursor: pointer;
+
+        &:hover{
+            border: 2px solid #1E6D78 ;
+            background: #fff;
+            color: #1E6D78;
+        }
     }
 
     .top-modal-emailling{
-        color:#fff;
+        color:#1E6C77;
         display: flex;
         justify-content: space-around;
-        padding: 15px;
         font-family: 'Titillium Web', sans-serif;
         
 
@@ -169,7 +177,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0 25px;
         }
 
         h1{
@@ -184,7 +191,10 @@
         }
 
         .img-modal-emailling{
-            width:30%;
+            width:40%;
+            padding: 55px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #1E6C77, #46BFD0);
         }
 
         img{
@@ -193,9 +203,44 @@
         }
     }
 
+    .right-modal-emailling{
+        padding: 25px;
+    }
+
     form{
         height: auto;
-        background: grey;
+
+        label{
+            display: flex;
+            flex-direction: column;
+            font-size:16px;
+            font-weight: bold;
+            margin: 15px 0 45px 0;
+        }
+
+        input{
+            width: 60%;
+            height: 30px;
+            margin: 10px 0;
+        }
+
+        button{
+            background: linear-gradient(90deg, #1E6C77, #46BFD0);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            font-size:16px;
+            font-weight: bold;
+            width: 30%;
+            cursor: pointer;
+
+            &:hover{
+                border: 2px solid #1E6D78 ;
+                background: #fff;
+                color: #1E6D78;
+            }
+        }
     }
 
 }

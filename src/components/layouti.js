@@ -8,7 +8,7 @@ import ModalEmailling from "./modalEmailling"
 
 class Layouti extends Component {
     state = {
-        modalScrap:true
+        modalScrap:false
     }
 
     handleShowModal = () => {
@@ -18,15 +18,15 @@ class Layouti extends Component {
      
 
     componentDidMount() {
-       /* let visited = sessionStorage["alreadyVisited"];
+       let visited = sessionStorage["alreadyVisited"];
         if(visited){
             this.setState({ modalScrap: false })
         }else{
             sessionStorage["alreadyVisited"] = true;
             setTimeout(()=>{
                 this.handleShowModal()
-             },1000);
-        }*/
+             },10000);
+        }
        
     }
 
@@ -41,27 +41,32 @@ class Layouti extends Component {
     
     return (
         <div>
-            <nav className={this.props.bgnav}>
-                <div className ="container">
-                    <div className={this.props.bgnav + " logo"}>
-                        <h1>
-                            <Link to="/">
-                                <img src={Logo} alt="Idée Code" />
-                            </Link>
-                        </h1>
-                    </div>
-                    <div className={this.props.bgnav + " menu-ctn"}>
-                        <ul className="menu">
-                            <li><Link to="/">Accueil</Link></li>
-                            <li><Link to="/solutions/">Solutions</Link></li>
-                            <li><Link to="/formation/">Formation</Link></li>
-                            <li><Link to="/blog/">Blog</Link></li>
-                            <li><Link to="/contact/">Contact</Link></li>
-                            <li><Link to="/login/" className={this.props.btnnav}>Se Connecter</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <header className="header">
+                <Link to="/" className="logo">
+                    <img src={Logo} alt="ideecode"/>
+                </Link>
+                <input className="menu-btn" type="checkbox" id="menu-btn" />
+                <label className="menu-icon" for="menu-btn">
+                    <span className="navicon" />
+                </label>
+                <ul className="menu">
+                    <li>
+                        <Link to="/solutions/">Solutions</Link>
+                    </li>
+                    <li>
+                        <Link to="/formation/">Formation</Link>
+                    </li>
+                    <li>
+                        <Link to="/blog/">Blog</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact/">Contact</Link>
+                    </li>
+                    <li>
+                        <Link className="btn-grey" to="/login/">Se connecter</Link>
+                    </li>
+                </ul>
+            </header>
             <main>
                 {modal}
                 {children}

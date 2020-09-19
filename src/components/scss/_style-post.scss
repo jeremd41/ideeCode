@@ -236,7 +236,7 @@
             .item-content-sidebar-1{
                 padding: 10px;
                 margin: 20px auto;
-                height: 300px;
+                height: auto;
                 width: 90%;
                 border: 5px solid #1E6C77;
                 border-radius: 7px;
@@ -288,6 +288,11 @@
                 margin: 10px auto;
             }
 
+            input:focus{
+                outline:none;
+                box-shadow: 0 0 0pt 1pt #1E6C77;
+            }
+
             button{
                 display: block;
                 text-transform: uppercase;
@@ -306,6 +311,10 @@
                     color: #F67976;
                     background: #fff;
                 }
+            }
+
+            button:focus{
+                outline: none;
             }
 
             .social-icon {

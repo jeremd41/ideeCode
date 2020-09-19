@@ -1,15 +1,31 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Link, graphql} from "gatsby"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import Layouti from "../components/layouti"
 import PostSquare from "../components/postsquare"
 
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 
 const BlogPost = ({ data }) => {
     console.log(data)
     const details = data.contentfulBlogPost;
+
+    const [inputEmail, setEmail] = useState("");
+    const [sendEmail, setSend] = useState(false);
+
+    const handleChange = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await addToMailchimp(inputEmail)
+        setEmail("")
+        setSend(true)
+    }
+
     return (
         <Layouti bgnav="article" btnnav="btn-grey" bgfooter1="article1" bgfooter2="formation1">
         <SEO title={details.title} description={details.excerpt.excerpt} />
@@ -39,10 +55,13 @@ const BlogPost = ({ data }) => {
                         <div className="item-content-sidebar-1">
                             <h3>Vous-en voulez plus ?</h3>
                             <p> Nous partageons des techniques, des astuces et du contenu exclusivement par mail !</p>
-                            <label>Votre E-mail !
-                                <input  type="text" className="ipt ipt-name" id="ipt-name" placeholder="Votre E-mail" required/>
-                            </label>
-                            <button>Envoyer !</button>
+                            <form onSubmit={handleSubmit}>
+                                <label>Votre E-mail !
+                                    <input onChange={handleChange}  type="text" className="ipt ipt-name" id="ipt-name" placeholder="Votre E-mail" required/>
+                                </label>
+                                <button>Envoyer !</button>
+                            </form>
+                            <p className="input-result">{sendEmail ?"Merci ! A bientôt dans votre boite mail":""}</p>
                         </div>    <div className="item-content-sidebar-2">
                             <h3>Nos réseaux !</h3>
                             <ul className="social-icon">

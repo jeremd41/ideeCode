@@ -41,7 +41,7 @@ footer {
     .nav-footer {
         display: flex;
         justify-content: space-between;
-        width: 75.5rem;
+        width: 100%;
         margin: 0 auto;
 
         li {
@@ -74,7 +74,7 @@ footer {
     .social-icon {
         display: flex;
         justify-content: space-between;
-        width: 75.5rem;
+        width: 70%;
         margin: 0 auto;
         
         i {
@@ -82,7 +82,7 @@ footer {
             transition: 0.3s;
 
             &:hover {
-                transform: scale(1.5);
+                transform: scale(1.1);
             }
 
         }
