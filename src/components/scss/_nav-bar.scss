@@ -42,7 +42,7 @@
     display: block;
     float: left;
     color: #fff;
-    width:15%;
+    width:35%;
     padding-top: 15px;
     padding-left: 10px;
     text-decoration: none;
@@ -129,6 +129,7 @@
   /* 48em = 768px */
   
   @media (min-width: 48em) {
+    .header .logo{width: 15%;}
     .header ul{
         padding:5px 0;
     }

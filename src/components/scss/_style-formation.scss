@@ -22,6 +22,8 @@
         display: flex;
         justify-content: space-around;
         padding-bottom: 5rem;
+        width: 90%;
+        margin: 0 auto;
 
         .text {
             font-family: 'Titillium Web', sans-serif;
@@ -93,4 +95,19 @@
         }
     }
 
+}
+
+@media (max-width: 48em) {
+    .container{
+        flex-direction: column;
+
+        .text{
+            width:80% !important;
+            margin: 0 auto;
+
+            p{
+                width: 100%;
+            }
+        }
+    }
 }
