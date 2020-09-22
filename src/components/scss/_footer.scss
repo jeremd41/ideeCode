@@ -41,7 +41,7 @@ footer {
     .nav-footer {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 70%;
         margin: 0 auto;
 
         li {
@@ -98,8 +98,8 @@ footer {
 
 }
 
-@media (max-width: 1331.98px) {
-
-    
-
+@media (max-width: 48em) {
+    .nav-footer{
+        flex-direction: column;
+    }
 }
