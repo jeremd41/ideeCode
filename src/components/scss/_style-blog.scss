@@ -133,6 +133,15 @@
 
 }
 
+@media (max-width: 48em) {
+    .categories-selector{
+        display: none;
+    }
+    .last-article{
+        margin-top: 57px;
+    }
+}
+
 /* Top Article */
 
 .top-article {

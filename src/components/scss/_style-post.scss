@@ -219,6 +219,15 @@
             font-family: "Titillium Web", sans-serif;
             color: #111;
             font-size: 18px;
+            max-width: 100%;
+        }
+
+        .body-blogpost{
+            padding: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
     }
@@ -360,4 +369,40 @@
         }
     }
 
+}
+
+@media (max-width: 48em) {
+    .postflex{
+        flex-direction: column;
+
+        article{
+            width: 95%;
+
+            .author-post{
+                width: 95%;
+                padding: 0;
+                margin: 10px 0;
+            }
+
+            .title-post{
+                font-size: 22px;
+            }
+        }
+
+        .sidebar-post{
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+    }
+
+    .same-categories{
+        padding: 15px !important;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+
+    
 }

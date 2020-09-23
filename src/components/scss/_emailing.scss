@@ -125,7 +125,7 @@
         .content{
             h2{
                 font-size: 20px;
-                margin-top: 50px;
+                margin-top: 25px;
             }
         }
 
@@ -134,6 +134,7 @@
             padding-right: 0;
             img{
                 height: 10rem;
+                animation: none;
             }
         }
         
@@ -272,4 +273,22 @@
         }
     }
 
+}
+
+@media (max-width: 48em) {
+    .modal-emailling{
+        .modal-emailling-content{
+            top:2%;
+            left:2%;
+            width: 95%;
+
+            .top-modal-emailling{
+                flex-direction: column;
+                
+                .img-modal-emailling{
+                    display: none;
+                }
+            }
+        }        
+    }
 }

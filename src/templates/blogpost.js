@@ -48,7 +48,7 @@ const BlogPost = ({ data }) => {
                         <li className="btn-twitter"><a target="blank" href="https://twitter.com/intent/tweet?text=https%3A//www.codeur.com/blog/user-generated-content-ugc/"><i className="fa fa-twitter-square " aria-hidden="true"></i>Twitter</a></li>
                         <li className="btn-linkedin"><a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.codeur.com/blog/user-generated-content-ugc/&title=Test&summary=&source="><i className="fa fa-linkedin-square " aria-hidden="true"></i>Linkedin</a></li>
                     </ul>
-                    <p className="body-blogpost" dangerouslySetInnerHTML={{__html:details.body.childMarkdownRemark.html}} />
+                    <div className="body-blogpost" dangerouslySetInnerHTML={{__html:details.body.childMarkdownRemark.html}} />
                 </article>
                 <div className="sidebar-post">
                     <div className="content-sidebar">

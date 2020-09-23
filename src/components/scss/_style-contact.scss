@@ -22,7 +22,7 @@
 
     .cadre-form{
         width: 70%;
-        height:500px;
+        height:auto;
         margin: 25px auto;
         display: flex;
         border-radius: 10px;
@@ -62,14 +62,12 @@
             width:80px;
             height:35px;
             font-weight: bold;
-            position: absolute;
-            bottom: 5%;
-            right:5%;
             background: #1E6C77;
             border: none;
             color:#fff;
             border-radius: 2rem;
-            font-size:14px;   
+            font-size:14px;
+            margin: 10px; 
         }
 
         button:hover{
@@ -80,41 +78,105 @@
         }
 
         .form-part-info{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
 
             label{
                 display: block;
-                width:55%;
-                margin: 15px;
                 font-size: 16px;
-                padding-left: 30px;
+                padding: 0px !important;
+                width: 95% !important;
+                margin: 10px auto !important;
             }
     
             input{
                 border: 1px solid #111;
                 border-radius: 2rem;
-                float: right;
                 padding:5px;
                 font-size: 14px;
+                float:none !important;
+                width: 95%;
+                margin: 5px 0;
             }
         }
         
 
         .input-message{
             display: block;
-            width:98%;
-            margin: 15px;
+            width:95%;
             font-size: 16px;
-            padding-left: 30px;
+            padding: 0 !important;
+            margin: 10px auto !important;
 
             textarea{
                 resize: none;
                 padding: 5px;
                 border: 1px solid #111;
                 border-radius: 2rem;
-                width:75%;
                 height: 200px;
-                float: right;
                 overflow: auto;
+                width: 95%!important;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .content-contact{
+        .title{
+            font-size: 18px;
+        }
+
+        .cadre-form{
+            flex-direction: column;
+            width: 95%;
+            height: auto;
+        }
+
+        .img-part{
+            width: 100%;
+            border-top-right-radius:0px 0px;
+            border-bottom-left-radius: 200px 20px;
+            border-bottom-right-radius: 200px 20px;
+
+            img{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .form-part{
+            width: 100%;
+
+        }
+
+        .form-part-info{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            label{
+                padding: 0px !important;
+                width: 95% !important;
+                margin: 10px auto !important;
+            }
+            input{
+                float:none !important;
+                width: 95%;
+                margin: 5px 0;
+                
+            }
+        }
+
+        .input-message{
+            padding: 0 !important;
+            margin: 10px auto !important;
+
+            textarea{
+                width: 95%!important;
+                float: none !important;
+                margin: 5px 0;
             }
         }
     }

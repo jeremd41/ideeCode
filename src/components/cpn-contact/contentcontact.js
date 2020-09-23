@@ -31,7 +31,7 @@ class ContentContact extends Component {
             <form target="_blank" action="https://formsubmit.co/webizy.france@gmail.com" method="POST">
                 <div className="form-part-info">
                     <label>
-                        Nom: <input 
+                        Nom <input 
                                 name="nom" 
                                 type="text" 
                                 placeholder="John*" 
@@ -41,7 +41,7 @@ class ContentContact extends Component {
                             />
                     </label>
                     <label>
-                        Prenom: <input 
+                        Prenom <input 
                                     name="prenom" 
                                     type="text" 
                                     placeholder="Doe*" 
@@ -51,7 +51,7 @@ class ContentContact extends Component {
                                 />
                     </label>
                     <label>
-                        E-mail: <input 
+                        E-mail <input 
                                     name="email" 
                                     type="email" 
                                     placeholder="johndoe@ideecode.fr*" 
@@ -61,7 +61,7 @@ class ContentContact extends Component {
                                 />
                     </label>
                     <label>
-                        Objet:  <input 
+                        Objet  <input 
                                     name="objet" 
                                     type="text" 
                                     placeholder="Votre demande*" 
@@ -72,7 +72,7 @@ class ContentContact extends Component {
                     </label>
                 </div>
                 <label className="input-message">
-                    Message: <textarea 
+                    Message <textarea 
                                 name="message" 
                                 width="150" height="150" 
                                 placeholder="Votre message ici*" 
