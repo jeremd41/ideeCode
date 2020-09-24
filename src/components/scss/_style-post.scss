@@ -222,12 +222,19 @@
             max-width: 100%;
         }
 
+        li{
+            font-family: "Titillium Web", sans-serif;
+            color: #111;
+            font-size: 18px;
+            max-width: 100%; 
+        }
+
         .body-blogpost{
             padding: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            //align-items: center;
         }
 
     }

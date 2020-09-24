@@ -48,8 +48,8 @@ export default () => {
                       tags={item.node.tags} />
                 )
             })}
-            <Link to="/blog/" className ="suite-btn">Voir tout les articles</Link>
         </div>
+        <Link to="/blog/" className ="suite-btn">Voir tout les articles</Link>
     </section>
     )
   }

@@ -65,10 +65,9 @@ const BlogPost = ({ data }) => {
                         </div>    <div className="item-content-sidebar-2">
                             <h3>Nos réseaux !</h3>
                             <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i className="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i className="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i className="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a target="blank" href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-diard/"><i className="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a target="blank" href="https://www.youtube.com/channel/UCzmxK5UIKN0INPka_Fdkv5A/featured?view_as=public"><i className="fa fa-youtube-play fa-5x" aria-hidden="true"></i></a></li>
+                                <li><a target="blank" href="https://www.instagram.com/idee.code/?hl=fr"><i className="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
