@@ -25,7 +25,7 @@ class Layouti extends Component {
             sessionStorage["alreadyVisited"] = true;
             setTimeout(()=>{
                 this.handleShowModal()
-             },10000);
+             },30000);
         }
        
     }
