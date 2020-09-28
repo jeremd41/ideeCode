@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `k87qzx4q1mp2`,
-        accessToken: `Vsn2QKd6oda2IiRvZs_aT4oMcz31BqmOHK9p-acVI64`,
+        accessToken: process.env.GATSBY_MY_CONTENTFUL,
       },
     },
     {
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: 'https://gmail.us3.list-manage.com/subscribe/post?u=ca92fc98b52b5cb9cbf91b82e&amp;id=11c8f61b86', // string; add your MC list endpoint here; see instructions below
+          endpoint: process.env.GATSBY_MY_MAILCHIMP, // string; add your MC list endpoint here; see instructions below
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
   }

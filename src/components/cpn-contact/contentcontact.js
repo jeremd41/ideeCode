@@ -28,7 +28,7 @@ class ContentContact extends Component {
             <img src={ContactEmail} alt="contact" />
           </div>
           <div className="form-part">
-            <form target="_blank" action="https://formsubmit.co/webizy.france@gmail.com" method="POST">
+            <form target="_blank" action={process.env.GATSBY_MY_FORMSUBMIT} method="POST">
                 <div className="form-part-info">
                     <label>
                         Nom <input 
@@ -84,7 +84,7 @@ class ContentContact extends Component {
                 <button type="submit">Envoyer</button>
                 <input type="text" name="_honey" style={{display:"none"}}/>
                 <input type="hidden" name="_captcha" value="false"/>
-                <input type="hidden" name="_next" value="http://localhost:8000/thanks"/>
+                <input type="hidden" name="_next" value="https://ideecode.netlify.app/thanks"/>
             </form>
           </div>
         </div>
