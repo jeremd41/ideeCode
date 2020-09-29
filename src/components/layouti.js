@@ -74,8 +74,8 @@ class Layouti extends Component {
             <footer>
                 <div className={this.props.bgfooter1}>
                     <ul className="nav-footer">
-                        <li><Link to="/sitemap/">Plan du Site</Link></li>
-                        <li><Link to="/privacy/">Mentions légales</Link></li>
+                        <li><Link to="/">Acceuil</Link></li>
+                        <li><Link to="/mention/">Mentions légales</Link></li>
                         <li><Link to="/contact/">Contact</Link></li>
                     </ul>
                     <ul className="social-icon">
