@@ -18,7 +18,6 @@ class index extends Component {
         <Layouti bgnav="accueil" btnnav="btn-grey" bgfooter1="accueil1" bgfooter2="formation2">
           <SEO title="Accueil" />
           <HeroVidButton/>
-          <p>hello, {process.env.GATSBY_MY_TEST}</p>
           <SolutionsContainer/>
           <FormationsContainer/>
           <Client/>
